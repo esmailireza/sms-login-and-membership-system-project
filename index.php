@@ -1,3 +1,7 @@
+<?php
+require_once("./config/database.php");
+?>
+
 <html lang="pt-BR">
 
 <head>
