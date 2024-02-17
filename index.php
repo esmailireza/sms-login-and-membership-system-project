@@ -39,7 +39,7 @@ require_once("./config/database.php");
                 <h1>Sign In</h1>
                 <br>
                 <span>or use your email/password</span>
-                <input type="text" placeholder="Mobile / Username / Password">
+                <input type="text" placeholder="Mobile / Username / Email">
                 <input type="password" placeholder="Password">
                 <a href="#">Forget your Password?</a>
                 <div style="display: inline;">
