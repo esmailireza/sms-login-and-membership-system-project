@@ -18,7 +18,7 @@ require_once("./config/database.php");
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up">
-            <form>
+            <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                 <h1>Create Account</h1>
                 <div class="social-icons">
                     <a href="#" class="icons"><i class="fa-brands fa-google-plus-g"></i></a>
@@ -27,11 +27,11 @@ require_once("./config/database.php");
                     <a href="#" class="icons"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your email to registration</span>
-                <input type="text" placeholder="userName">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="MObileNumber">
-                <input type="password" placeholder="Password">
-                <button>Sign Up</button>
+                <input type="text" placeholder="userName" name="username">
+                <input type="email" placeholder="Email" name="email">
+                <input type="text" placeholder="MObileNumber" name="mobile">
+                <input type="password" placeholder="Password" name="password">
+                <button type="submit" name="signup">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in">
