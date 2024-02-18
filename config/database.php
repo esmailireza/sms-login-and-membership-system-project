@@ -8,6 +8,7 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 //echo "Connected successfully";
 
 try {
+
   if (isset($_POST['signup'])) {
     //parametrs
     $username = $_POST["username"];

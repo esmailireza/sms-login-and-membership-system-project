@@ -1,5 +1,6 @@
 <?php
 require_once("./config/database.php");
+require_once("./action/sign-in.php");
 ?>
 
 <html lang="pt-BR">
@@ -35,17 +36,22 @@ require_once("./config/database.php");
             </form>
         </div>
         <div class="form-container sign-in">
-            <form>
+            <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                 <h1>Sign In</h1>
                 <br>
                 <span>or use your email/password</span>
-                <input type="text" placeholder="Mobile / Username / Email">
-                <input type="password" placeholder="Password">
+                <input type="text" name="key" placeholder="Mobile / Username / Email">
+                <input type="password" name="password" placeholder="Password">
                 <a href="#">Forget your Password?</a>
                 <div style="display: inline;">
-                    <button>Sign In</button>
+                    <button type="submit" name="signin">Sign In</button>
                     <a style="margin-left: 15px" href="otp.php">Send OTP</a>
                 </div>
+                <?php
+                if (isset($_GET["notuser"])) {
+
+                }
+                ?>
             </form>
         </div>
         <div class="toggle-container">
