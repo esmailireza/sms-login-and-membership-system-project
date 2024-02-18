@@ -27,7 +27,7 @@ if (isset($_POST['signin'])) {
         $result = $stmt->rowCount();
 
         if ($result) {
-            echo "Your loginned to website";
+            header('location: ./index.php?loginned=ok');
         } else {
             header('location: ./index.php?notuser=ok');
         }
